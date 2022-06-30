@@ -1,0 +1,7 @@
+name: CDK
+version: '${project.version}'
+main: cn.mcciv.cdk.CDK
+api-version: 1.15
+authors: [ YaoSiQian ]
+description: A bukkit plugin to set up some keys to active some commands
+website: mcciv.cn

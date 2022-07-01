@@ -57,7 +57,7 @@ public class command implements CommandExecutor {
                     if (exportCDK()){
                         p.sendMessage("§6导出成功！请检查配置文件中export.yml");
                     }else {
-                        p.sendMessage("§c在导出过程中发生错误！请检查！");
+                        p.sendMessage("§c在导出过程中发生错误！");
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -76,9 +76,9 @@ public class command implements CommandExecutor {
                     return true;
                 }
             }
-            p.sendMessage("§4CDK不存在！");
+            p.sendMessage("§c该CDK不存在！");
         }else {
-            p.sendMessage("§4指令是不是打错了？？？");
+            p.sendMessage("§c未知指令");
         }
         return true;
     }
